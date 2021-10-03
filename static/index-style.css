@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f4fcf6;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0%;
+}
+.nav-links{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-links li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.links{
+    text-decoration: none;
+    color: #404040;
+    display: inline-block;
+    position: relative;
+    padding: 0.25rem;
+}
+.links::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #404040;
+    transition: all 0.3s ease-in-out;
+}
+.links:hover::before{
+    width: 100%;
+}
+
+
+/* HERO */
+.hero, .purpose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+}
+.hero-container, .purpose-container{
+    width: 50%;
+    text-align: center;
+    color: #404040;
+}
+.hero-container h3, .purpose-container h3{
+    font-size: 40px;
+    margin-bottom: 2rem;
+}
+.hero-container p, .purpose-container p{
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+.btn{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #404040;
+    border: 2px solid #404040;
+}
+.btn:before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 5px);
+    height: calc(100% - 13px);
+    background-color: #f4fcf6;
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.5s;
+    transform: scaleY(1);
+}
+.btn:hover::before{
+    transform: scaleY(0);
+}
+.btn:after{
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    height: calc(100% + 5px);
+    width: calc(100% - 12px);
+    background-color: #f4fcf6;
+    transition: 0.5s ease-in-out;
+    transform: scaleX(1);
+}
+.btn:hover::after{
+    transform: scaleX(0);
+}
+.btn span{
+    position: relative;
+    z-index: 3;
+    text-decoration: none;
+    color: #404040;
+    display: inline-block;
+    position: relative;
+    padding: 0.25rem;
+}
+.btn span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #404040;
+    transition: all 0.3s ease-in-out;
+}
+.btn span:hover::before{
+    width: 100%;
+}
+.img-container{
+    width: 40%;
+}
+.img-container img{
+    width: 100%;
+}
+
+/* INFO */
+.info{
+    height: 115vh;
+    text-align: center;
+    margin-top: 5%;
+    overflow: hidden;
+}
+.info h3{
+    font-size: 40px;
+    margin-bottom: 5%;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-column-gap: 80px;
+    grid-row-gap: 80px;
+    width: 50%;
+    margin: auto;
+}
+.cards{
+    border: 2px solid #f4fcf6;
+    border-top-left-radius: 25px;
+    padding: 2%;
+    transition: all 0.5s ease-in-out;
+}
+.cards:hover{
+    box-shadow: 5px -10px #e9f9ed,10px -20px #c8f1d4, 15px -30px #b2ebc2, 20px -40px #92e3a9;
+}
+.cards h5{
+    font-size: 25px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+    border-top: 6px solid #92e3a9;
+}
+.foot-container{
+    margin: 0% 2%;
+}
+.foot-links{
+    list-style: none;
+    margin-top: 1rem;
+}
+.foot-links li a{
+    text-decoration: none;
+    color: #404040;
+}
+.foot-links li a:hover{
+    text-decoration: underline;
+}
+.foot-container h3{
+    margin-bottom: 1rem;
+}
+
+.top-btn{
+    visibility: hidden;
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+    padding: 10px;
+    background-color: #92e3a9;
+    color: #fff;
+    font-size: 25px;
+    animation: bounce 0.7s ease-in-out infinite alternate;
+}
+.show-btn{
+    visibility: visible;
+}
+@keyframes bounce {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.07);
+    }
+}

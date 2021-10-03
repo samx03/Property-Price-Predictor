@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="{{url_for('static',filename='index-style.css')}}" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <title>Home Price Prediction</title>
+</head>
+
+<body>
+    <nav class="navbar" id="home">
+        <ul class="nav-links">
+            <li><a href="/" class="links">Home</a></li>
+            <li><a href="/predict" class="links">Predict</a></li>
+            <li><a href="#" class="links">About-us</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div class="hero-container">
+            <h3>Predict Prices</h3>
+            <p>Predicting house prices can help to determine the selling price of a house of a particular region and can
+                help people to find the right time to buy a home.</p>
+            <a href="/predict" class="btn"> <span> Get Started </span></a>
+        </div>
+
+        <div class="img-container">
+            <img src="../static/images/House searching-bro.svg" alt="House-search">
+        </div>
+    </section>
+    <section class="purpose">
+        <div class="img-container">
+            <img src="../static/images/House searching-cuate.svg" alt="House-search">
+        </div>
+
+        <div class="purpose-container">
+            <h3>Property Price Predictor</h3>
+            <p>We provide price predictions on the properties, so you don't waste your time out there.</p>
+            <a href="/predict" class="btn"> <span> Predict Prices </span></a>
+        </div>
+    </section>
+    <section class="info">
+        <h3>What factors Do we Consider While Predicting The Prices?</h3>
+        <div class="card-container">
+            <div class="cards">
+                <img src="../static/icons/house.png" alt="House">
+                <h5>Square ft.</h5>
+                <p>A unit of area measurement equal to a square measuring one foot on each side.</p>
+            </div>
+            <div class="cards">
+                <img src="../static/icons/bedroom.png" alt="BHK">
+                <h5>BHK</h4>
+                    <p>BHK states the category under which the house falls, to determine the cost of the house for
+                        selling and buying purposes.</p>
+            </div>
+            <div class="cards">
+                <img src="../static/icons/bath.png" alt="Bath">
+                <h5>Bathrooms</h5>
+                <p>Bathrooms can be one of the inmportant factors while predicting the price of a house.</p>
+            </div>
+            <div class="cards">
+                <img src="../static/icons/location.png" alt="Location">
+                <h5>Location</h5>
+                <p>Once you have a budget in mind, location is usually one of the first details to think about when
+                    searching for a property.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="foot-container">
+            <h3>Quick Links</h3>
+            <ul class="foot-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/predict">Predict</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <div class="foot-container">
+            <h3>About US</h3>
+            <p>This is a property predictor website.</p>
+        </div>
+    </footer>
+
+    <a href="#home" class="top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <script>
+        const topBtn = document.querySelector(".top-btn");
+
+        window.addEventListener("scroll", function () {
+            const scrollHeight = window.pageYOffset;
+            if (scrollHeight > 400) {
+                topBtn.classList.add("show-btn")
+            }
+            else {
+                topBtn.classList.remove("show-btn")
+            }
+        });
+    </script>
+</body>
+
+</html>
