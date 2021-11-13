@@ -1,0 +1,118 @@
+.owl-carousel {
+  width: 85% !important;
+  margin: auto;
+}
+.owl-carousel .item img {
+  width: 100%;
+  height: 75vh;
+  border-radius: 25px;
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  width: 2%;
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-nav button.owl-prev {
+  color: #92e3a9 !important;
+  transition: all 0.2s ease-in-out;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  border-radius: 50%;
+  background: #92e3a9 !important;
+  color: rgb(255, 255, 255) !important;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #92e3a9 !important;
+}
+
+.bangalore {
+  width: 85%;
+  margin: 5% auto;
+  display: flex;
+  justify-content: space-between;
+}
+.bangalore .bangalore-container {
+  width: 50%;
+  text-align: justify;
+  font-size: 18px;
+}
+.bangalore h3 {
+  font-size: 45px;
+  text-align: center;
+}
+.bangalore .image-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+.table {
+  background-color: transparent;
+  border: 1px solid #d6d6d6;
+  box-shadow: 0 0 0 rgb(160 160 160 / 45%);
+  box-sizing: border-box;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 40% !important;
+  max-width: 100%;
+  color: #333;
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  clear: both;
+  margin: 15px 0 !important;
+}
+.table td,
+.table th {
+  padding: 8px;
+  font-size: 16px !important;
+}
+
+.crime-in-bangalore {
+  width: 85%;
+  margin: auto;
+}
+.crime-container h3 {
+  text-align: center;
+  font-size: 45px;
+}
+
+/* For Chrome or Safari */
+progress::-webkit-progress-bar {
+  background-color: #eeeeee;
+}
+
+progress::-webkit-progress-value {
+  background-color: #039603 !important;
+}
+
+/* For Firefox */
+progress {
+  background-color: #eee;
+}
+
+progress::-moz-progress-bar {
+  background-color: #039603 !important;
+}
+
+/* For IE10 */
+progress {
+  background-color: #eee;
+}
+
+progress {
+  background-color: #039603;
+}
+.crime-table{
+  width: 90%;
+  margin: auto;
+}
+.crime-table td{
+  width: 70% !important;
+  padding: 6px 0;
+}
+.crime-in-bangalore h3{
+  text-align: center;
+  font-size: 45px;
+  margin: 5% 0;
+}

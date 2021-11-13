@@ -50,6 +50,10 @@ def predict():
     return render_template('predict.html')
 
 
+@app.route("/about-bangalore")
+def aboutBangalore():
+    return render_template('about-bangalore.html')
+
 @app.route("/prediction", methods=["POST"])
 def prediction():
     
